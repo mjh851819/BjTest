@@ -23,4 +23,9 @@ public class IndexController {
 
         return new ResponseEntity<>(HttpStatus.OK);
     }
+
+    @GetMapping("/test")
+    public String test() {
+        return "testPage";
+    }
 }
